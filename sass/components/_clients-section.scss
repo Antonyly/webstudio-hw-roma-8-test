@@ -1,0 +1,64 @@
+/* Клиенты  */
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.clients-container__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.clients-container__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.clients-container__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-container__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  fill: #afb1b8;
+
+  transition: fill $animation, border $animation;
+}
+
+.clients-container__link:hover,
+.clients-container__link:focus {
+  fill: $accent-color;
+}
+
+.clients-container__link--border {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-container__link--border:hover,
+.clients-container__link--border:focus {
+  border: 1px solid $accent-color;
+}
