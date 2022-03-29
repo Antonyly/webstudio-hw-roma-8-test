@@ -19,6 +19,22 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-background.jpg);
+
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/hero-768.jpg);
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/hero-480.jpg);
+  }
 }
 
 .hero-container {
@@ -26,8 +42,8 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  max-width: 1600px;
+  // width: 1200px;
+  // max-width: 1600px;
 }
 
 .hero-container__title {
@@ -41,6 +57,32 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+
+  @media screen and (min-width: 480px) {
+    color: $white-color;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    color: $white-color;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
 }
 
 .hero-container__button {
@@ -76,7 +118,7 @@
   z-index: 2;
 }
 
-.hero-container__backdrop--is-hidden {
+.hero-container__backdrop--hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -86,7 +128,7 @@
   height: 581px;
   background-color: $white-color;
 
-  position: relative;
+  position: absolute;
 
   top: 50%;
   left: 50%;
@@ -223,10 +265,10 @@
   &:focus {
     fill: $accent-color;
   }
-}
 
-.form__input:focus ~ .form__icon {
-  fill: $accent-color;
+  .form__input:focus ~ & {
+    fill: $accent-color;
+  }
 }
 
 .form-policy {

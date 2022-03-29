@@ -45,20 +45,20 @@
   fill: #afb1b8;
 
   transition: fill $animation, border $animation;
-}
 
-.clients-container__link:hover,
-.clients-container__link:focus {
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .clients-container__link--border {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-}
 
-.clients-container__link--border:hover,
-.clients-container__link--border:focus {
-  border: 1px solid $accent-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }

@@ -1,5 +1,5 @@
 @import "./utils/variables";
-@import "./utils/utils";
+@import "./base/base";
 @import "./components/header";
 @import "./components/hero-section";
 @import "./components/section";
@@ -7,3 +7,4 @@
 @import "./components/team-section";
 @import "./components/clients-section";
 @import "./components/footer-section";
+@import "./components/portfolio-section";
