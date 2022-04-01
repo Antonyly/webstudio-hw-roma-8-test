@@ -18,17 +18,30 @@
     <!--Навигация-->
     <header class="header">
         <div class="header__container">
+
+            <a href="./index.html" class="nav__logo-link"><span class="nav__logo">Web</span>Studio</a>
+
+            <button type="button" class="menu-button menu-button--is-open" aria-expanded="false" aria-controls="nav-container"
+                data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/symbol-defs-2.svg#icon-close-2"></use>
+                    <use class="icon-menu" href="./images/symbol-defs-2.svg#icon-menu"></use>
+                </svg>
+            </button>
+
+            <div class="nav-container nav-container--is-open" id="nav-container" data-menu>
+
             <nav class="nav">
-                <a href="./index.html" class="nav__logo-link"><span class="nav__logo">Web</span>Studio</a>
     
                 <ul class="nav__list">
                     <li class="nav__item"> <a href="./index.html" class="nav__link">Студия</a></li>
                     <li class="nav__item"> <a href="./portfolio.html"
                             class="nav__link nav__link--current nav__link--animation">Портфолио</a></li>
                     <li class="nav__item"> <a href="" class="nav__link">Контакты</a></li>
-    
                 </ul>
+
             </nav>
+
             <ul class="auth-nav">
                 <li class="auth-nav__item">
                     <a href="tel:+380961111111" class="auth-nav__link">
@@ -49,6 +62,23 @@
                     </a>
                 </li>
             </ul>
+
+            <ul class="header-socials">
+                <li class="header-socials__item">
+                    <a class="header-socials__link" href="">Instagram</a>
+                </li>
+                <li class="header-socials__item">
+                    <a class="header-socials__link" href="">Twitter</a>
+                </li>
+                <li class="header-socials__item">
+                    <a class="header-socials__link" href="">Facebook</a>
+                </li>
+                <li class="header-socials__item">
+                    <a class="header-socials__link" href="">LinkedIn</a>
+                </li>
+            </ul>
+
+            </div>
         </div>
     </header>
 
@@ -78,7 +108,28 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project1.jpg" alt="Экран ноутбука" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project1-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project1-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project1-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project1-370.jpg" 
+                                        alt="Экран ноутбука" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
 
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
@@ -96,7 +147,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project2.jpg" alt="Баскетболисты" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project2-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project2-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project2-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project2-370.jpg" 
+                                        alt="Баскетболисты" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+                        
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -113,7 +186,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project3.jpg" alt="Ресторан Seafood" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project3-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project3-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project3-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project3-370.jpg" 
+                                        alt="Ресторан Seafood" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -130,7 +225,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project4.jpg" alt="Наушники" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project4-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project4-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project4-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project4-370.jpg" 
+                                        alt="Наушники" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -147,7 +264,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project5.jpg" alt="Две коробки" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project5-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project5-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project5-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project5-370.jpg" 
+                                        alt="Две коробки" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -164,7 +303,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project6.jpg" alt="Монитор" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project6-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project6-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project6-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project6-370.jpg" 
+                                        alt="Монитор" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -181,7 +342,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project7.jpg" alt="Книга" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project7-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project7-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project7-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project7-370.jpg" 
+                                        alt="Книга" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -198,7 +381,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project8.jpg" alt="Проект LAB" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project8-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project8-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project8-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project8-370.jpg" 
+                                        alt="Проект LAB" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -215,7 +420,29 @@
                     <li class="portfolio-list__item">
                         <a class="portfolio-list__link" href="">
                             <div class="portfolio-list__card">
-                                <img src="./images/project9.jpg" alt="Человек печатает за ноутбуком" width="370">
+                                <picture>
+                                    <source 
+                                        srcset="
+                                            ./images/project9-370.jpg" 
+                                        media="(min-width: 1200px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project9-354.jpg" 
+                                        media="(min-width: 768px)" 
+                                        type="image/jpeg" />
+                                    <source 
+                                        srcset="
+                                            ./images/project9-450.jpg" 
+                                        media="(min-width: 320px)" 
+                                        type="image/jpeg" />
+                                    <img
+                                        src="./images/project9-370.jpg" 
+                                        alt="Человек печатает за ноутбуком" 
+                                        width="370" 
+                                        height="294">
+                                </picture>
+
                                 <p class="portfolio-list__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                                     Все это позволит посетителю
@@ -237,81 +464,79 @@
     <!--Футер-->
     <footer class="footer-section">
         <div class="footer-section__container">
-            <div class="address-container">
-                <a href="" class="address-container__link"><span class="address-container__logo">Web</span>Studio</a>
-                <address>
-                    <ul class="address-container__list">
-                        <li class="address-container__item">
-                            <a href="https://goo.gl/maps/dVaYjC4JMrnxNcRj6" target="_blank"
-                                rel="nofollow noreferrer noopener" class="address-container__street">г. Киев, пр-т Леси Украинки, 26</a>
-                            <br>
+            <div class="container-wrapper">
+                <div class="address-container">
+                    <a href="" class="address-container__link"><span class="address-container__logo">Web</span>Studio</a>
+                    <address>
+                        <ul class="address-container__list">
+                            <li class="address-container__item">
+                                <a href="https://goo.gl/maps/dVaYjC4JMrnxNcRj6" target="_blank"
+                                    rel="nofollow noreferrer noopener" class="address-container__street">г. Киев, пр-т Леси Украинки, 26</a>
+                                <br>
+                            </li>
+                            <li class="address-container__item">
+                                <a href="mailto:info@devstudio.com" class="address-container__info">info@devstudio.com</a> <br>
+                            </li>
+                            <li class="address-container__item">
+                                <a href="tel:+380961111111" class="address-container__info">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <div class="socials-container">
+                    <h3 class="socials-container__title">Присоединяйтесь</h3>
+
+                    <ul class="socials-container__list">
+                        <li class="socials-container__item">
+                            <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
+                                aria-label="Instagram">
+                                <svg class="socials-container__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs-2.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address-container__item">
-                            <a href="mailto:info@devstudio.com" class="address-container__info">info@devstudio.com</a> <br>
+
+                        <li class="socials-container__item">
+                            <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
+                                aria-label="Twitter">
+                                <svg class="socials-container__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs-2.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address-container__item">
-                            <a href="tel:+380961111111" class="address-container__info">+38 096 111 11 11</a>
+
+                        <li class="socials-container__item">
+                            <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
+                                aria-label="Facebook">
+                                <svg class="socials-container__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs-2.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="socials-container__item">
+                            <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
+                                aria-label="Linkedin">
+                                <svg class="socials-container__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs-2.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-
-            <div class="socials-container">
-                <h3 class="socials-container__title">Присоединяйтесь</h3>
-
-                <ul class="socials-container__list">
-                    <li class="socials-container__item">
-                        <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
-                            aria-label="Instagram">
-                            <svg class="socials-container__icon" width="20" height="20">
-                                <use href="./images/symbol-defs-2.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="socials-container__item">
-                        <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
-                            aria-label="Twitter">
-                            <svg class="socials-container__icon" width="20" height="20">
-                                <use href="./images/symbol-defs-2.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="socials-container__item">
-                        <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
-                            aria-label="Facebook">
-                            <svg class="socials-container__icon" width="20" height="20">
-                                <use href="./images/symbol-defs-2.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="socials-container__item">
-                        <a class="socials-container__link" href="" target="_blank" rel="noreferrer noopener nofollow"
-                            aria-label="Linkedin">
-                            <svg class="socials-container__icon" width="20" height="20">
-                                <use href="./images/symbol-defs-2.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <form class="footer-form" autocomplete="on" novalidate>
 
                 <div class="footer-form__field">
                     <label for="mail" class="footer-form__label">
                         Подпишитесь на рассылку</label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-form__input" />
-
-
-
                 </div>
 
                 <button type="submit" class="footer-form__button">Подписаться
-                    <span class="footers-icon">
-                        <svg class="footer-icon" width="24" height="24">
+                    <span>
+                        <svg class="footer-form__icon" width="24" height="24">
                             <use href="./images/symbol-defs-2.svg#icon-icon-send"></use>
                         </svg>
                     </span>
@@ -321,6 +546,8 @@
 
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
