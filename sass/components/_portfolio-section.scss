@@ -2,6 +2,8 @@
 .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
+  width: 100%;
+  height: auto;
 
   @media screen and (max-width: 1199px) {
   padding-top: 60px;
@@ -14,8 +16,10 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  height: auto;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
