@@ -224,6 +224,12 @@
   transition: top $animation;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 24px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
 }
 
 .portfolio-list__desc {
