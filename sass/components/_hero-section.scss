@@ -5,7 +5,8 @@
   margin-bottom: 0;
   // margin-left: auto;
   // margin-right: auto;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -26,6 +27,7 @@
     padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
+    background-size: cover;
     
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -49,6 +51,7 @@
       padding-bottom: 118px;
       margin-left: auto;
       margin-right: auto;
+      background-size: cover;
   
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -70,18 +73,19 @@
       padding-bottom: 200px;
       margin-left: auto;
       margin-right: auto;
+      background-size: cover;
   
-    //   @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //       rgba(47, 48, 58, 0.4)), url('../images/hero-background@2x.jpg');
-    //   }
-    // }
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)), url('../images/hero-background@2x.jpg');
+      }
+    }
   }
 }
-}
+
 
 .hero-container {
   padding-left: 15px;
@@ -89,7 +93,19 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: auto;
+  // height: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .hero-container__title {
@@ -238,6 +254,10 @@
   letter-spacing: 0.03em;
 
   color: $primary-text-color;
+
+  @media screen and (max-width: 479px) {
+    padding-bottom: 0;
+  }
 }
 
 .form__field {
@@ -422,6 +442,6 @@
 
   @media screen and (max-width: 479px) {
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
