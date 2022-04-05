@@ -64,10 +64,13 @@ p {
 }
 
 .menu-button {
-  display: inline-flex;
+  display: inline-block;
   margin: 0;
   padding: 0;
   margin-left: auto;
+  display: inline-block;
+  position: fixed;
+  left: 87%;
   z-index: 5;
   border: none;
   background-color: transparent;
@@ -92,8 +95,6 @@ p {
   display: block;
 }
 
-/* Site nav */
-/* Auth nav */
 @media screen and (max-width: 767px) {
   .inner-container {
     position: absolute;
@@ -102,10 +103,10 @@ p {
 }
 
 .nav-container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   padding-left: 40px;
   height: auto;
   cursor: pointer;
@@ -2007,11 +2008,11 @@ p {
 }
 
 .portfolio-list__card {
-  position: relative;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
   margin: 0 auto;
 }
 
